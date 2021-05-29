@@ -1,0 +1,25 @@
+.field {
+    width: 100%;
+    .label {
+        font-weight: bold;
+    }
+}
+
+.input:active, .input:focus, .input:hover, .select:active, .select:focus, .select:hover {
+    border-color: $theme-primary!important;
+    box-shadow: 0 0 0 0.125em $light!important;
+}
+
+.button:active, .button:focus, .button:hover {
+    border-color: $theme-primary!important;
+    box-shadow: 0 0 0 0.125em $light!important;
+}
+
+.button {
+    border-color: $theme-primary;
+    color: $theme-primary;
+}
+
+.select, select {
+    width: 100%;
+}

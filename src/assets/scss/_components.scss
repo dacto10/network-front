@@ -1,0 +1,150 @@
+.page {
+    margin: 75px 100px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: $white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &__title {
+        text-align: center;
+        font-size: 22px;
+        color: $theme-primary;
+        font-weight: bold;
+    }
+    &--lg {
+        width: 700px;
+    }
+    &--md {
+        width: 550px;
+    }
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.d-container {
+    width: 1200px;
+    &--xl {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 100px;
+        width: 1300px;  
+    }
+    &__header {
+        text-align: center;
+        font-size: 22px;
+        color: $theme-primary;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.d-card {
+    background-color: $white;
+    width: 100%;
+    padding: 40px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .d-title {
+            font-size: 18px;
+        }
+        > div {
+            min-width: 200px;
+        }
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        .d-title {
+            font-size: 18px;
+        }
+    }
+    &__body {
+        padding-top: 40px;
+        table {
+            width: 100%;
+            td, th {
+                padding: 15px 20px;
+            }
+            th {
+                color: $theme-primary;
+                border-bottom: solid 1px $dark-gray;
+                border-top: solid 1px $dark-gray;
+            }
+            tbody {
+                tr:last-child {
+                    border-bottom: solid 1px $dark-gray;
+                }
+                tr:nth-of-type(odd) {
+                    background-color: $light;
+                }
+            }
+        }
+    }
+}
+
+.remove-icon {
+    border-radius: 15px;
+    background-color: $failure-light;
+    border: solid 1px $failure-dark;
+    color: $failure;
+    cursor: pointer;
+}
+
+.standart-icon {
+    border-radius: 15px;
+    border: solid 1px $theme-primary;
+    color: $theme-primary;
+    cursor: pointer;
+}
+
+.color-failure {
+    border-color: $failure-dark!important;
+    color: $failure!important;
+}
+.color-failure:hover {
+    color: $black!important;
+    border-color: $failure-dark!important;
+    box-shadow: 0 0 0 0.125em $failure-light!important;
+}
+.alert {
+    color: $failure;
+}
+.button-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px!important;
+    gap: 20px;
+}
+
+.no-style {
+    border: none;
+    background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    &__brand {
+        width: 270px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__icon {
+        height: 40px;
+        width: 50px;
+        svg {
+            height: 30px!important;
+            width: 30px!important;
+        }
+    }
+}
