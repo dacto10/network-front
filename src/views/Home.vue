@@ -10,7 +10,10 @@
         <div class="d-card__header">
           <div class="d-title">Available Networks:</div>
           <div class="button-container">
-            <!-- <b-button @click="$router.push('/form')">ADD NETWORK</b-button> -->
+            <b-button @click="() => {
+              setCurrentCreation('Network')
+              $router.push('/form')  
+            }">ADD NETWORK</b-button>
           </div>
         </div>
         <div class="d-card__body">
@@ -40,7 +43,10 @@
         <div class="d-card__header">
           <div class="d-title">Available Routers:</div>
           <div class="button-container">
-            <!-- <b-button @click="$router.push('/')">ADD ROUTER</b-button> -->
+            <b-button @click="() => {
+              setCurrentCreation('Router')
+              $router.push('/form')  
+            }">ADD ROUTER</b-button>
           </div>
         </div>
         <div class="d-card__body">
@@ -76,7 +82,10 @@
         <div class="d-card__header">
           <div class="d-title">Available Servers:</div>
           <div class="button-container">
-            <!-- <b-button @click="$router.push('/')">ADD SERVER</b-button> -->
+            <b-button @click="() => {
+              setCurrentCreation('Server')
+              $router.push('/form')  
+            }">ADD SERVER</b-button>
           </div>
         </div>
         <div class="d-card__body">
@@ -147,7 +156,10 @@
         <div class="d-card__header">
           <div class="d-title">Available Webs:</div>
           <div class="button-container">
-            <!-- <b-button @click="$router.push('/')">ADD WEB</b-button> -->
+            <b-button @click="() => {
+              setCurrentCreation('Web')
+              $router.push('/form')  
+            }">ADD WEB</b-button>
           </div>
         </div>
         <div class="d-card__body">

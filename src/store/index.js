@@ -34,6 +34,7 @@ export default new Vuex.Store({
     getTerminals: ({ terminals }) => terminals.data,
     getTerminalIps: ({ terminals }) => terminals.data.map(el => el.terminal_ip_address),
     getServers: ({ servers }) => servers.data,
+    getServersIps: ({ servers }) => servers.data.map(el => el.server_ip_address),
     getNetworks: ({ networks }) => networks.data,
     getNetworkIps: ({ networks }) => networks.data.filter(el => el.type === "private").map(el => el.network_ip_address),
     getRouters: ({ routers }) => routers.data,
