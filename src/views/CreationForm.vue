@@ -172,6 +172,7 @@ export default {
             await axios.post(`http://localhost:3000/terminal/create`, {
                 terminal: this.terminal,
             });
+            await this.axios.post('http://localhost:3000/network/connect');
             this.terminal.mac = '';
             this.terminal.ip = '';
             this.terminal.network = '';
@@ -181,6 +182,7 @@ export default {
           await axios.post(`http://localhost:3000/router/create`, {
             router: this.router
           });
+          await this.axios.post('http://localhost:3000/network/connect');
           this.router.mac = '';
           this.router.private_ip = '';
           this.router.public_ips.length = '';
@@ -189,6 +191,7 @@ export default {
           await axios.post(`http://localhost:3000/server/create`, {
             server: this.server
           });
+          await this.axios.post('http://localhost:3000/network/connect');
           this.server.mac = '';
           this.server.ip = '';
           this.server.network = '';
@@ -197,6 +200,7 @@ export default {
           await axios.post(`http://localhost:3000/network/create`, {
             network: this.network
           });
+          await this.axios.post('http://localhost:3000/network/connect');
           this.network.ip = '';
           this.network.type = '';
         },
@@ -204,6 +208,7 @@ export default {
           await axios.post(`http://localhost:3000/server/webs`, {
             web: this.web
           });
+          await this.axios.post('http://localhost:3000/network/connect');
           this.web.url = '';
           this.web.server_ip = '';
         },
