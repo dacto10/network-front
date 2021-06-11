@@ -21,11 +21,11 @@
             </b-select>
           </b-field>
           <b-field label="MAC:">
-            <b-input v-model="router.mac" required></b-input>
+            <b-input v-model="terminal.mac" required></b-input>
           </b-field>
           <b-field label="IP:">
             <b-input
-              v-model="router.ip"
+              v-model="terminal.ip"
               required
             ></b-input>
           </b-field>
